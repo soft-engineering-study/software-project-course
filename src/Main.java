@@ -1,13 +1,13 @@
-import br.ic.ufal.entities.Employee;
-import br.ic.ufal.entities.Hourly;
-import br.ic.ufal.entities.Salaried;
+import br.ic.ufal.employees.Employee;
+import br.ic.ufal.employees.Hourly;
+import br.ic.ufal.employees.Salaried;
 
 public class Main {
     public static void main(String[] args) {
 
         Employee[] employees = new Employee[3];
 
-        employees[0] = new Employee("Roberto");
+        /* employees[0] = new Employee("Roberto"); */
         employees[1] = new Hourly("Bruno", 30);
         employees[2] = new Salaried("Jose", 1000);
 

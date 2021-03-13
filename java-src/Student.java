@@ -1,4 +1,3 @@
-package java;
 public class Student {
 
     private String name;

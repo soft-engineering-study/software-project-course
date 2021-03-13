@@ -1,4 +1,3 @@
-package java;
 public class Scope {
     // field that is accessible to all methods of this class
     private static int x = 1;

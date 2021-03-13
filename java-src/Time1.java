@@ -1,4 +1,3 @@
-package java;
 public class Time1 {
 
     private int hour = 0;

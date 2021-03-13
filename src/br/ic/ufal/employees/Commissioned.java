@@ -1,4 +1,4 @@
-import br.ic.ufal.entities.Employee;
+package br.ic.ufal.employees;
 
 public class Commissioned extends Employee{
     
@@ -7,6 +7,12 @@ public class Commissioned extends Employee{
     public Commissioned(String name, double commission){
         super(name);
         this.commission = commission;
+    }
+
+    @Override
+    public String definePayment(String paymentType) {
+        // TODO Auto-generated method stub
+        return null;
     }
 }
 

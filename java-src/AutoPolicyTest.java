@@ -1,4 +1,4 @@
-package java;
+
 public class AutoPolicyTest {
     public static void main(String[] args) {
         // create two AutoPolicy objects

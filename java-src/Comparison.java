@@ -1,4 +1,4 @@
-package br.ic.ufal.ifs; 
+
 
 import java.util.Scanner;
 

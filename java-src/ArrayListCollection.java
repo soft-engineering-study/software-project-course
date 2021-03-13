@@ -1,4 +1,4 @@
-package java;
+
 import java.util.ArrayList;
 
 public class ArrayListCollection {
@@ -6,7 +6,7 @@ public class ArrayListCollection {
         ArrayList<String> items = new ArrayList<String>();
 
         items.add("red");
-        items.add(0, "yellow");
+       // items.add(0, "yellow");
 
         System.out.print("Display list of contents with counter-controlled loop");
 

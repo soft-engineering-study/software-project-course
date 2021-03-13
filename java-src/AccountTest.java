@@ -1,4 +1,4 @@
-package java.overview;
+
 import java.util.Scanner;
 
 public class AccountTest {

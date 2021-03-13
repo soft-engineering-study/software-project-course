@@ -1,4 +1,4 @@
-package java;
+
 import java.util.Scanner;
 
 public class LetterGrades {
@@ -58,13 +58,13 @@ public class LetterGrades {
             // output the summary of results
             System.out.printf("Total of the %d grades entered is %d%n", gradeCounter, total);
             System.out.printf("Class average is: %.2f%n", average);
-            System.out.printf("%n%s%n%s%d%n%s%d%n%s%d%n%s%d%n%s%d%n%s%d%n",
+            /* System.out.printf("%n%s%n%s%d%n%s%d%n%s%d%n%s%d%n%s%d%n%s%d%n",
                     "Number of students who received each grade:",
                     "A: ", aCount,
                     "B: ", bCount,
                     "C: ", cCount,
                     "D: ", dCount,
-                    "F: ", fCount);
+                    "F: ", fCount); */
         } else {
             // no grades were entered, so output appropriate message
             System.out.println("No grades were entered");

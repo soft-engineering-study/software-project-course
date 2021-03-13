@@ -1,4 +1,3 @@
-package java;
 public class VarargsTest {
 
     public static double average(double... numbers) {

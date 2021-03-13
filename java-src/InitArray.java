@@ -1,4 +1,4 @@
-package java;
+
 public class InitArray {
 
     public static void main(String[] args) {
