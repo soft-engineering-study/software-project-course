@@ -15,5 +15,11 @@ public class Salaried extends Employee{
         return null;
     }
 
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString()+ 
+               "Salary: " + this.salary;
+    }
 }
 

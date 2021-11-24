@@ -1,6 +1,8 @@
 package br.ic.ufal.employees;
 
-public abstract class Employee 
+import java.util.ArrayList;
+
+public abstract  class Employee
 {
     public String name; 
 
@@ -23,8 +25,15 @@ public abstract class Employee
     @Override
     public String toString() {
         // TODO Auto-generated method stub
-        return this.getName();
+        return "Name: " + this.name + "\n";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        // TODO Auto-generated method stub
+        return super.equals(obj);
+    }
+    
 }
 
 

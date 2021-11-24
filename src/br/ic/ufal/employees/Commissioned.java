@@ -14,5 +14,12 @@ public class Commissioned extends Employee{
         // TODO Auto-generated method stub
         return null;
     }
+
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return super.toString()+ 
+               "Commission: " + this.commission;
+    }
 }
 
