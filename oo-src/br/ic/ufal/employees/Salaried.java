@@ -9,12 +9,7 @@ public class Salaried extends Employee{
         this.salary = salary;
     }
 
-    @Override
-    public String definePayment(String paymentType) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
+   
     @Override
     public String toString() {
         // TODO Auto-generated method stub

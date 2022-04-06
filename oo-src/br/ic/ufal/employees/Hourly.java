@@ -17,12 +17,7 @@ public class Hourly extends Employee {
         return workingHours;
     }
 
-    @Override
-    public String definePayment(String paymentType) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
+ 
     @Override
     public String toString() {
         // TODO Auto-generated method stub
