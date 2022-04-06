@@ -1,6 +1,5 @@
 package br.ic.ufal.employees;
 
-import java.util.ArrayList;
 
 public  class Employee
 {
@@ -19,11 +18,7 @@ public  class Employee
     public void setName(String name) {
         this.name = name;
     }
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return "Name: " + this.name + "\n";
-    }
+    
 
     
 }
