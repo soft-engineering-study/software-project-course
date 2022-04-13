@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+import br.ic.ufal.employees.Commissioned;
 import br.ic.ufal.employees.Employee;
 import br.ic.ufal.employees.Hourly;
 import br.ic.ufal.employees.Salaried;
@@ -8,9 +9,17 @@ import br.ic.ufal.employees.Salaried;
 public class Main {
     public static void main(String[] args) {
     
-        Employee employee = new Employee("Bruno", "UFAL", 16);
+        ArrayList<Employee> employees = new ArrayList<>();
+        
+        employees.add(new Hourly("Bruno", "UFAL", 16, 4));
+        employees.add(new Salaried("Marcelo", "Reitoria", 15, 8));
+        employees.add(new Commissioned("João", "IC", 12, 200));
 
-        System.out.println(employee);
+
+        for (Employee employee : employees) {
+            System.out.println(employee);
+            System.out.println("========================");
+        }
     }
 }
 
