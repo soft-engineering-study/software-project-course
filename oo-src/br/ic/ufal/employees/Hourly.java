@@ -2,26 +2,26 @@ package br.ic.ufal.employees;
 
 public class Hourly extends Employee{
 
-    private double hours; 
+    private double workingHours; 
 
-    public Hourly(String name, String address, double timeCard, double hours){
+    public Hourly(String name, String address, double timeCard, double workingHours){
 
         super(name, address, timeCard);
-        this.hours = hours; 
+        this.workingHours = workingHours; 
 
         
 
     }
 
-    public void testando(){
-        
+    public double getWorkingHours() {
+        return workingHours;
     }
 
     @Override
     public String toString() {
         // TODO Auto-generated method stub
         return super.toString()+
-               "\nHours: " + this.hours;
+               "\nWorking Hours: " + this.workingHours;
     }
     
 }
