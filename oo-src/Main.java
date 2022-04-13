@@ -17,8 +17,18 @@ public class Main {
 
 
         for (Employee employee : employees) {
-            System.out.println(employee);
-            System.out.println("========================");
+
+            if(employee instanceof Hourly){
+                Hourly hourly = (Hourly)employee;
+                System.out.println(hourly.getWorkingHours());
+            } else{
+                System.out.println(employee);
+                System.out.println("========================");
+            }
+            
+            
+            
+            
         }
     }
 }
