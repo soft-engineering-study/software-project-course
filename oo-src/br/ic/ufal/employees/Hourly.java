@@ -23,5 +23,11 @@ public class Hourly extends Employee{
         return super.toString()+
                "\nWorking Hours: " + this.workingHours;
     }
+
+    @Override
+    public String definePayment(String paymentType) {
+        // TODO Auto-generated method stub
+        return null;
+    }
     
 }

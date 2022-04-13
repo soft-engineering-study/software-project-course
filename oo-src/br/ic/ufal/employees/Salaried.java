@@ -17,4 +17,10 @@ public class Salaried extends Employee {
         return super.toString()+
                "\nSalary: " + this.salary;
     }
+
+    @Override
+    public String definePayment(String paymentType) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 }

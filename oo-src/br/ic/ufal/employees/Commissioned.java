@@ -16,4 +16,10 @@ public class Commissioned extends Employee{
         return super.toString()+
                "\n Commission: " + this.commission;
     }
+
+    @Override
+    public String definePayment(String paymentType) {
+        // TODO Auto-generated method stub
+        return null;
+    }
 }

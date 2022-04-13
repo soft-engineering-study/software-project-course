@@ -8,7 +8,8 @@ import br.ic.ufal.employees.Salaried;
 
 public class Main {
     public static void main(String[] args) {
-    
+
+        
         ArrayList<Employee> employees = new ArrayList<>();
         
         employees.add(new Hourly("Bruno", "UFAL", 16, 4));

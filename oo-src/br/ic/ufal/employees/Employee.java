@@ -1,6 +1,6 @@
 package br.ic.ufal.employees;
 
-public  class Employee
+public abstract class Employee
 {
     
     private String name; 
@@ -59,6 +59,13 @@ public  class Employee
                "\nName: " + employee.name +
                "\nAddress: " + employee.address +
                "\nTime Card: " + employee.timeCard;
+    }
+
+    public abstract String definePayment(String paymentType);
+    
+    public void testando(){
+        definePayment("paymentType");
+        
     }
 
     @Override
