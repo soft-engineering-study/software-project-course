@@ -4,7 +4,7 @@ public class RemoteControlTest {
 		
 		RemoteControl remoteControl = new RemoteControl();
 		
-		remoteControl.execute(Command.DOWN);
+		remoteControl.execute(Command.UP);
 		
     }
 }

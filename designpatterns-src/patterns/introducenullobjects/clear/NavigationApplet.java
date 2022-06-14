@@ -3,6 +3,10 @@ package patterns.introducenullobjects.clear;
 public class NavigationApplet extends Applet {
 
 	private MouseEventHandler mouseEventHandler = new NullMouseEventHandler();
+
+	public NavigationApplet (){
+
+	}
 	
 	public NavigationApplet(MouseEventHandler mouseEventHandler) {
 		// TODO Auto-generated constructor stub

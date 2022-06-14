@@ -4,11 +4,18 @@ public class NullMouseEventHandler implements MouseEventHandler{
 
 	@Override
 	public boolean mouseMove(){
+
+		System.out.println("O objeto esta NULL");
+
+
 		return true;
 	}
 	
 	@Override
 	public boolean mouseDown(){
+
+		System.out.println("O objeto esta NULL");
+
 		return true;
 	}
 	

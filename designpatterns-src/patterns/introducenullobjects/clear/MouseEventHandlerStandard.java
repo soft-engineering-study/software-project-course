@@ -4,7 +4,12 @@ public class MouseEventHandlerStandard implements MouseEventHandler{
 
 	@Override
 	public boolean mouseMove(){
+
+		System.out.println("Mouse is moving");
+
 		return true;
+
+
 	}
 	
 	@Override
