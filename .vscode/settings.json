@@ -1,6 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "src",
-        "oo-src"
+        "oo-src",
+        "java-src"
     ]
 }

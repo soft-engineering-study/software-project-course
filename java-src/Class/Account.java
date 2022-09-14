@@ -2,12 +2,14 @@
 
 public class Account {
 
-    private String name; // instance variable
-    private double balance; // instance variable
+    public Address address;    
+    public String name; // instance variable
+    public int balance; // instance variable
 
     // Empty Constructor
     public Account() {
-
+        System.out.println("kkkkkk");
+        
     }
 
     // Constructor receiving the name

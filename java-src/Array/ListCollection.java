@@ -5,6 +5,7 @@ public class ArrayListCollection {
     public static void main(String[] args) {
         ArrayList<String> items = new ArrayList<String>();
 
+        
         items.add("red");
        // items.add(0, "yellow");
 
