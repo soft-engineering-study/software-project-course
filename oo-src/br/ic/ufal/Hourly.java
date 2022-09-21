@@ -1,4 +1,6 @@
-package br.ic.ufal.employees;
+package br.ic.ufal;
+
+import br.ic.ufal.employees.Employee;
 
 public class Hourly extends Employee{
 
@@ -9,6 +11,7 @@ public class Hourly extends Employee{
         super(name, address, timeCard);
         this.workingHours = workingHours; 
 
+        Employee employee = new Employee();
         
 
     }
@@ -20,6 +23,8 @@ public class Hourly extends Employee{
     @Override
     public String toString() {
         // TODO Auto-generated method stub
+        
+
         return super.toString()+
                "\nWorking Hours: " + this.workingHours;
     }
@@ -29,5 +34,6 @@ public class Hourly extends Employee{
         // TODO Auto-generated method stub
         return null;
     }
+    
     
 }

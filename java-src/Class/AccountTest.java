@@ -61,7 +61,8 @@ public class AccountTest {
 //        System.out.printf("%s balance: $%.2f%n", account1.getName(), account1.getBalance());
 //        System.out.printf("%s balance: $%.2f%n", account2.getName(), account2.getBalance());
 
-        Account account1; 
+        Account account1;
+        account1.
 
         // display the initial balance of each object
         displayAccount(account1);

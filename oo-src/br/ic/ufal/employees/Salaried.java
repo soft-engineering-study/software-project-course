@@ -9,6 +9,8 @@ public class Salaried extends Employee {
         super(name, address, timeCard);
         this.salary = salary; 
 
+        Employee employee = new Employee();
+        
     }
 
     @Override

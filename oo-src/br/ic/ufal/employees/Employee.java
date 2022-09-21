@@ -1,18 +1,20 @@
 package br.ic.ufal.employees;
 
-public abstract class Employee
+public class Employee
 {
     
     private String name; 
     
     protected String address; 
     
-    private double timeCard; 
+    double timeCard; 
 
     public Employee(){}
 
     public Employee(String name){
         this.name = name;
+        
+        
     }
 
     public Employee(String name, String address, double timeCard){
@@ -61,12 +63,7 @@ public abstract class Employee
                "\nTime Card: " + employee.timeCard;
     }
 
-    public abstract String definePayment(String paymentType);
     
-    public void testando(){
-        definePayment("paymentType");
-        
-    }
 
     @Override
     public String toString() {
