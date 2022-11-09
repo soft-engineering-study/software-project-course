@@ -8,7 +8,9 @@ import br.ic.ufal.employees.Salaried;
 
 public class Main {
     public static void main(String[] args) {
-
+         
+        Box<Employee> eBox = new Box<Employee>();
+ 
         
         ArrayList<Employee> employees = new ArrayList<>();
         
