@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
         "oo-src",
-        "java-src"
+        "java-src",
+        "designpatterns-src/patterns/visitor/clear",
+        "designpatterns-src/patterns/command/clear"
     ]
 }
