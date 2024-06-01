@@ -1,5 +1,5 @@
 from collections import deque
-from dataset import graph
+from algorithms.dataset import graph
 
 def person_is_seller(name):
     return name[-1]=='m'
