@@ -4,6 +4,13 @@ Exploring Encapsulation in Python using Classes from Chapter 9
 This file demonstrates different levels of encapsulation in Python, using the
 existing classes (Dog, Car, ElectricCar, Battery) as starting points and then
 showing how to improve encapsulation with Python conventions.
+
+  1. Comparing original classes with enhanced versions that use proper encapsulation
+  2. Showing Python's encapsulation conventions (public, protected with _, private with __)
+  3. Using properties (@property and setters) for controlled access
+  4. Adding validation to prevent invalid data
+  5. Demonstrating composition with the Battery class
+  6. Benefits of encapsulation - Data validation, implementation hiding, access control, maintainability, security
 """
 
 # First, let's import and examine the original classes' encapsulation
