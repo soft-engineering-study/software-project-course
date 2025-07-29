@@ -15,6 +15,10 @@ This is an educational repository focused on software engineering concepts, cont
 python algorithms/binary-search.py
 python algorithms/dijkstras_algorithm.py
 python algorithms/breath-first-search.py
+python algorithms/linear-search.py
+python algorithms/quick-sort.py
+python algorithms/selection-sort.py
+python algorithms/depth-first-search/application.py
 
 # Run Python examples from chapters
 python python-src/chap2/name.py
@@ -41,6 +45,14 @@ java headfirst.designpatterns.strategy.MiniDuckSimulator
 # For GRASP patterns
 javac -d . designpatterns-src/patterns/grasp/controller/*.java
 java patterns.grasp.controller.Main
+
+# For refactoring patterns
+javac -d . designpatterns-src/patterns/extractmethod/*.java
+java patterns.extractmethod.Main
+
+# For employee payment system
+javac -d . oo-src/br/ic/ufal/*.java
+java br.ic.ufal.Main
 ```
 
 ### C Development
@@ -59,6 +71,7 @@ gcc c-src/point.c -o c-src/point
   - Each algorithm is a standalone Python file
   - Some use the `big_o` library for complexity analysis
   - Includes visualization outputs as PNG files
+  - Algorithms included: binary search, linear search, BFS, DFS, Dijkstra's, quick sort, selection sort
 
 - **designpatterns-src/**: Comprehensive Java design pattern implementations
   - **headfirst/designpatterns/**: Examples from "Head First Design Patterns" book
@@ -67,16 +80,18 @@ gcc c-src/point.c -o c-src/point
 
 - **java-src/**: Basic Java programming examples (arrays, classes, control structures)
 - **oo-src/**: Object-oriented programming examples in Java
+  - Includes employee payment system with different payment types (Hourly, Salaried, Commissioned)
 - **python-src/**: Python Crash Course book examples organized by chapters
 - **c-src/**: Simple C programming examples
 
 ### Key Design Pattern Packages
 
 The repository includes implementations of:
-- Behavioral: Strategy, Observer, Command, Iterator, Template Method, State, Visitor
+- Behavioral: Strategy, Observer, Command, Iterator, Template Method, State, Visitor, Interpreter
 - Creational: Factory, Abstract Factory, Singleton, Builder, Prototype
 - Structural: Decorator, Adapter, Facade, Proxy, Composite, Flyweight, Bridge
-- GRASP: Controller, Creator, High Cohesion, Low Coupling, Polymorphism, Pure Fabrication
+- GRASP: Controller, Creator, Information Expert, High Cohesion, Low Coupling, Polymorphism, Pure Fabrication
+- Refactoring Patterns: Extract Method, Extract Class, Chain Constructors, Accumulation to Collecting Parameter, Introduce Null Objects
 
 ### Testing Approach
 
