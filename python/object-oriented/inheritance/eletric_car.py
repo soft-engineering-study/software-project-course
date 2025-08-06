@@ -38,6 +38,8 @@ class ElectricCar(Car):
         """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
 
-my_tesla = ElectricCar('tesla', 'model s', 2019)
-print(my_tesla.get_descriptive_name())
-my_tesla.describe_battery()
+
+if __name__ == "__main__":
+    my_tesla = ElectricCar('tesla', 'model s', 2019)
+    print(my_tesla.get_descriptive_name())
+    my_tesla.describe_battery()

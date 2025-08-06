@@ -21,7 +21,8 @@ from abc import ABC, abstractmethod
 class Car:
     """Base class representing a car"""
     
-    def __init__(self, make, model, year):
+    def __init__(self, make, model, year, **kwargs):
+        super().__init__(**kwargs)  # Support cooperative inheritance
         self.make = make
         self.model = model
         self.year = year
@@ -196,7 +197,7 @@ class LuxuryCar(Car, GPSMixin, EntertainmentSystemMixin):
     """Luxury car with multiple features through multiple inheritance"""
     
     def __init__(self, make, model, year, leather_color="black"):
-        # Initialize all parent classes
+        # Initialize all parent classes using cooperative inheritance
         super().__init__(make, model, year)
         self.leather_color = leather_color
         self.massage_seats = True
