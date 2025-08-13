@@ -20,13 +20,17 @@ python algorithms/quick-sort.py
 python algorithms/selection-sort.py
 python algorithms/depth-first-search/application.py
 
-# Run Python examples from chapters
-python python-src/chap2/name.py
-python python-src/chap9/car.py
+# Run Python examples organized by concepts
+python python/basic/conditions/voting.py
+python python/basic/loops/factorial.py
+python python/object-oriented/classes/main.py
+python python/object-oriented/inheritance/main.py
+python python/object-oriented/polymorphism/main.py
 
 # Run unit tests
-python -m unittest python-src/chap11/test_name_function.py
-python python-src/chap11/test_survey.py
+python -m unittest python/tests/test_name_function.py
+python -m unittest python/tests/test_anagrams.py
+python -m unittest python/tests/test_employee.py
 ```
 
 ### Java Development
@@ -35,23 +39,23 @@ Since there's no build system (Maven/Gradle), compile and run Java files directl
 
 ```bash
 # For simple Java programs
-javac java-src/Addition.java
-java -cp java-src Addition
+javac java/java-src/Addition.java
+java -cp java/java-src Addition
 
 # For package-based programs (design patterns)
-javac -d . designpatterns-src/headfirst/designpatterns/strategy/*.java
+javac -d . java/designpatterns-src/headfirst/designpatterns/strategy/*.java
 java headfirst.designpatterns.strategy.MiniDuckSimulator
 
 # For GRASP patterns
-javac -d . designpatterns-src/patterns/grasp/controller/*.java
+javac -d . java/designpatterns-src/patterns/grasp/controller/*.java
 java patterns.grasp.controller.Main
 
 # For refactoring patterns
-javac -d . designpatterns-src/patterns/extractmethod/*.java
+javac -d . java/designpatterns-src/patterns/extractmethod/*.java
 java patterns.extractmethod.Main
 
 # For employee payment system
-javac -d . oo-src/br/ic/ufal/*.java
+javac -d . java/oo-src/br/ic/ufal/*.java
 java br.ic.ufal.Main
 ```
 
@@ -73,15 +77,19 @@ gcc c-src/point.c -o c-src/point
   - Includes visualization outputs as PNG files
   - Algorithms included: binary search, linear search, BFS, DFS, Dijkstra's, quick sort, selection sort
 
-- **designpatterns-src/**: Comprehensive Java design pattern implementations
+- **python/**: Organized Python educational examples
+  - **basic/**: Fundamental programming concepts (conditions, dictionaries, files, functions, inputs, lists, loops, prints)
+  - **object-oriented/**: OOP concepts (classes, composition, encapsulation, inheritance, polymorphism)
+  - **tests/**: Unit test examples using Python's unittest framework
+
+- **java/designpatterns-src/**: Comprehensive Java design pattern implementations
   - **headfirst/designpatterns/**: Examples from "Head First Design Patterns" book
   - **patterns/**: Additional pattern implementations including GRASP patterns
   - Each pattern has its own package with example implementations
 
-- **java-src/**: Basic Java programming examples (arrays, classes, control structures)
-- **oo-src/**: Object-oriented programming examples in Java
+- **java/java-src/**: Basic Java programming examples (arrays, classes, control structures)
+- **java/oo-src/**: Object-oriented programming examples in Java
   - Includes employee payment system with different payment types (Hourly, Salaried, Commissioned)
-- **python-src/**: Python Crash Course book examples organized by chapters
 - **c-src/**: Simple C programming examples
 
 ### Key Design Pattern Packages
