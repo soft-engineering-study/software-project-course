@@ -111,26 +111,6 @@ def operate_vehicle(vehicle: Vehicle):
         print(f"Special: {vehicle.wheelie()}")
 
 
-# Example of method resolution order (MRO)
-class HybridCar(ElectricCar, GasolineCar):
-    """Hybrid car inherits from both ElectricCar and GasolineCar"""
-    def __init__(self, brand, model, battery_size, fuel_capacity):
-        # Call ElectricCar's __init__ which calls Vehicle's __init__
-        ElectricCar.__init__(self, brand, model, battery_size)
-        # Store fuel capacity separately
-        self.fuel_capacity = fuel_capacity
-    
-    def start(self):
-        # Custom implementation for hybrid
-        return "Hybrid system activated - electric motor ready, engine on standby"
-    
-    def switch_mode(self, mode):
-        if mode == "electric":
-            return "Switched to electric mode"
-        elif mode == "gasoline":
-            return "Switched to gasoline mode"
-        else:
-            return "Invalid mode"
 
 
 if __name__ == "__main__":
@@ -147,7 +127,7 @@ if __name__ == "__main__":
         ElectricCar("Tesla", "Model 3", 75),
         GasolineCar("Ford", "F-150", 36),
         Motorcycle("Harley", "Sportster", "Cruiser"),
-        HybridCar("Toyota", "Prius", 8.8, 11.3)
+        
     ]
     
     # Demonstrate polymorphism - same function, different behaviors
@@ -156,22 +136,11 @@ if __name__ == "__main__":
     for vehicle in vehicles:
         operate_vehicle(vehicle)
     
-    # Method Resolution Order
-    print("\n\n2. Method Resolution Order (MRO) for HybridCar:")
-    print("-" * 40)
-    print("HybridCar inherits from both ElectricCar and GasolineCar")
-    print("MRO determines which method gets called:")
-    for cls in HybridCar.__mro__:
-        print(f"  -> {cls.__name__}")
+    
     
     # Demonstrate hybrid-specific behavior
     print("\n3. Hybrid car specific behavior:")
     print("-" * 40)
-    hybrid = HybridCar("Honda", "Accord Hybrid", 1.3, 12.8)
-    print(f"Hybrid: {hybrid.describe()}")
-    print(f"Mode switching: {hybrid.switch_mode('electric')}")
-    print(f"Charging: {hybrid.charge()}")  # From ElectricCar
-    print(f"Refueling: {hybrid.refuel()}")  # From GasolineCar
     
     # Benefits of method overriding
     print("\n\n4. BENEFITS OF METHOD OVERRIDING:")
