@@ -9,7 +9,6 @@ In Python, we don't check types - we just call methods and let it fail if the
 object doesn't support them.
 """
 
-
 class Dog:
     """Dog from chapter 9"""
     def __init__(self, name):
